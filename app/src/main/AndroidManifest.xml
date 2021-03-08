@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quote">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quote">
+        <activity android:name=".QuotationActivity"
+            android:parentActivityName=".DashboardActivity"
+            android:label="@string/title_dashboard_1">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity">
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".FavouriteActivity"
+            android:parentActivityName=".DashboardActivity"
+            android:label="@string/title_dashboard_2">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity">
+            </meta-data>
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".DashboardActivity"
+            android:label="@string/title_dashboard_3"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value=".DashboardActivity">
+        </meta-data>
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".DashboardActivity"
+            android:label="@string/title_dashboard_4" />
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value=".DashboardActivity">
+        </meta-data>
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

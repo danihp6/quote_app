@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pref">
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="username"
+        android:title="@string/settings_name"
+        app:icon="@android:drawable/ic_menu_myplaces"
+        app:summary="@string/settings_name_info" />
+    <PreferenceCategory android:title="@string/settings_preferences">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/languages"
+            android:entryValues="@array/languagesValue"
+            android:key="languages"
+            android:title="@string/settings_language"
+            app:icon="@android:drawable/ic_menu_mapmode"
+            app:singleLineTitle="false"
+            app:summary="@string/settings_english" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/http"
+            android:entryValues="@array/httpValues"
+            android:key="http"
+            android:title="@string/settings_http_method"
+            app:icon="@android:drawable/ic_menu_send"
+            app:singleLineTitle="false"
+            app:summary="@string/settings_get" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/db"
+            android:entryValues="@array/dbValue"
+            android:key="db"
+            android:title="@string/settings_db_method"
+            app:icon="@android:drawable/ic_menu_save"
+            app:singleLineTitle="false"
+            app:summary="@string/settings_room" />
+    </PreferenceCategory>
+</PreferenceScreen>

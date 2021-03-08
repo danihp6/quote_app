@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="languages">
+        <item>@string/settings_english</item>
+        <item>@string/settings_russian</item>
+    </array>
+    <array name="languagesValue">
+        <item>"0"</item>
+        <item>"1"</item>
+    </array>
+    <array name="http">
+        <item>@string/settings_get</item>
+        <item>@string/settings_post</item>
+    </array>
+    <array name="httpValues">
+        <item>"0"</item>
+        <item>"1"</item>
+    </array>
+    <array name="db">
+        <item>@string/settings_room</item>
+        <item>@string/settings_helper</item>
+    </array>
+    <array name="dbValue">
+        <item>"0"</item>
+        <item>"1"</item>
+    </array>
+</resources>

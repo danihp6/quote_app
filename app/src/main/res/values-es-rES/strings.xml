@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dashboard_1">Conseguir citas</string>
+    <string name="dashboard_2">Citas favoritas</string>
+    <string name="dashboard_3">Ajustes</string>
+    <string name="dashboard_4">Sobre</string>
+    <string name="title_dashboard_1">Cita aleatoria</string>
+    <string name="title_dashboard_2">Citas favoritas</string>
+    <string name="title_dashboard_3">Ajustes</string>
+    <string name="title_dashboard_4">Sobre</string>
+    <string name="about_info">Quotation Shake por\\n\\nDaniel Herrero\\n\\ndanihp6@gmail.com\\n\\n2020</string>
+    <string name="settings_name">Nombre de usuario</string>
+    <string name="settings_name_info">Nombre que identifica al usuario</string>
+    <string name="settings_void_name">Inserta tu nombre</string>
+    <string name="settings_language">Las citas seran recibidas en el lenguaje seleccionado</string>
+    <string name="settings_preferences">Selecciona tus preferencias</string>
+    <string name="settings_http_method">Las respuestas Web seran relizadas usando el método HTTP seleccionado</string>
+    <string name="settings_db_method">Los datos seran recibidos usando el proveedor seleccionado</string>
+    <string name="settings_clear">Restaurar por defecto</string>
+    <string name="favourite_author_info">Información del autor</string>
+    <string name="quotation_welcome">bienvenido!\\nPulsa Refrescar  para conseguir una nueva cita</string>
+    <string name="quotation_default_name">Usuario sin nombre</string>
+    <string name="quotation_sample_quotation">Ejemplo de cita</string>
+    <string name="quotation_sample_author">Ejemplo de autor</string>
+    <string name="quotation_red_problems">Lo sentimos, pero hay problemas con la red</string>
+    <string name="settings_english">Ingles</string>
+    <string name="settings_russian">Ruso</string>
+    <string name="favourite_empty_author">Autor anónimo</string>
+    <string name="favourite_empty_author_info">Autor anónimo, no es posible encontrar información</string>
+    <string name="favourite_dialog_remove">Estas seguro que quieres borrar esta cita?</string>
+    <string name="favourite_dialog_remove_yes">Cita borrada</string>
+    <string name="quotation_add_favourites">Añadir</string>
+    <string name="quotation_refresh_quote">Refrescar</string>
+    <string name="favourite_clear">Eliminar Todos</string>
+    <string name="favourite_dialog_clear">Seguro que quieres borrar TODAS tus citas favoritas?</string>
+    <string name="favourite_dialog_clear_yes">Se borro todo</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/i_add_favourites"
+        android:title="@string/quotation_add_favourites"
+        android:icon="@android:drawable/ic_menu_add"
+        android:visible="false">
+    </item>
+    <item android:id="@+id/mi_refresh"
+        android:title="@string/quotation_refresh_quote"
+        android:icon="@android:drawable/ic_menu_rotate">
+    </item>
+</menu>
