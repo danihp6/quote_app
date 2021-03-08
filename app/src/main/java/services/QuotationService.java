@@ -4,17 +4,13 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.preference.PreferenceManager;
-import android.util.Log;
 
 import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.URISyntaxException;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -52,7 +48,6 @@ public class QuotationService {
         try {
 
             URL url = new URL(builder.build().toString());
-            Log.d("url",url.toString());
             HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
             Gson gson = new Gson();
             connection.setDoInput(true);

@@ -1,13 +1,7 @@
 package threads;
-
-import android.util.Log;
-
-import com.example.quote.FavouriteActivity;
-import com.example.quote.QuotationActivity;
-
 import java.lang.ref.WeakReference;
-import java.util.List;
 
+import com.example.quote.QuotationActivity;
 import databases.RoomDB;
 import databases.RoomDao;
 import databases.SQLiteOpenHelper;

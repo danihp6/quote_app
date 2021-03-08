@@ -1,18 +1,12 @@
 package fragments;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
-import androidx.annotation.NonNull;
 import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.PreferenceManager;
+
 
 import com.example.quote.R;
 
@@ -39,7 +33,6 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         setPreferencesFromResource(R.xml.preferences_settings, rootKey);
 
         preferences = getPreferenceManager().getSharedPreferences();
-        Log.d("preferences",preferences.getAll().toString());
 
         etp_username = findPreference("username");
         lp_languages = findPreference("languages");
@@ -51,7 +44,6 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
             public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
                 if(prefs.getString("db","0") == "1") RoomDB.getInstance(getContext()).destroyInstance();
-                Log.d("lang",prefs.getString("languages","0"));
                 setSummaries();
             }};
 
